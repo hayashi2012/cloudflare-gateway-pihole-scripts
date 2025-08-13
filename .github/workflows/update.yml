@@ -2,7 +2,7 @@ name: Update Filter Lists
 
 on:
   schedule:
-    - cron: "15 5 */3 * *"
+    - cron: "10 1 * * *"
   push:
     branches:
       - main
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: "mrrfv/cloudflare-gateway-pihole-scripts"
           ref: "v1"
